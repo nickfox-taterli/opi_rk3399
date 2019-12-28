@@ -1,0 +1,202 @@
+.*
+*.a
+*.asn1.[ch]
+*.bin
+*.bz2
+*.c.[012]*.*
+*.dtb
+*.dtbo
+*.dtb.S
+*.dwo
+*.elf
+*.gcno
+*.gz
+*.i
+*.ko
+*.lex.c
+*.ll
+*.lst
+*.lz4
+*.lzma
+*.lzo
+*.mod.c
+*.o
+*.o.*
+*.order
+*.patch
+*.s
+*.so
+*.so.dbg
+*.su
+*.symtypes
+*.tab.[ch]
+*.tar
+*.xz
+Module.symvers
+modules.builtin
+
+#
+# Top-level generic files
+#
+/tags
+/TAGS
+/linux
+/vmlinux
+/vmlinux.32
+/vmlinux-gdb.py
+/vmlinuz
+/System.map
+/Module.markers
+
+#
+# RPM spec file (make rpm-pkg)
+#
+/*.spec
+
+#
+# Debian directory (make deb-pkg)
+#
+/debian/
+
+#
+# Snap directory (make snap-pkg)
+#
+/snap/
+
+#
+# tar directory (make tar*-pkg)
+#
+/tar-install/
+
+#
+# git files that we don't want to ignore even if they are dot-files
+#
+!.gitignore
+!.mailmap
+!.cocciconfig
+!.clang-format
+
+#
+# Generated include files
+#
+include/config
+include/generated
+include/ksym
+arch/*/include/generated
+
+# stgit generated dirs
+patches-*
+
+# quilt's files
+patches
+series
+
+# cscope files
+cscope.*
+ncscope.*
+
+# gnu global files
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+
+# id-utils files
+ID
+
+*.orig
+*~
+\#*#
+
+#
+# Leavings from module signing
+#
+extra_certificates
+signing_key.pem
+signing_key.priv
+signing_key.x509
+x509.genkey
+
+# Kconfig presets
+all.config
+
+# Kdevelop4
+*.kdev4
+
+# Output
+/out/
+/rootfs/
+/ubuntu/
+
+# U-Boot
+#
+
+*.rej
+*.swp
+
+#
+# Top-level generic files
+#
+
+/u-boot/MLO
+/u-boot/System.map
+/u-boot/u-boot
+/u-boot/u-boot.hex
+/u-boot/u-boot.imx
+/u-boot/u-boot.map
+/u-boot/u-boot.srec
+/u-boot/u-boot.ldr
+/u-boot/u-boot.ldr.hex
+/u-boot/u-boot.ldr.srec
+/u-boot/u-boot.img
+/u-boot/u-boot.kwb
+/u-boot/u-boot.sha1
+/u-boot/u-boot.dis
+/u-boot/u-boot.lds
+/u-boot/u-boot.ubl
+/u-boot/u-boot.ais
+/u-boot/u-boot.dtb
+/u-boot/u-boot.sb
+
+#
+# Generated files
+#
+
+*.depend*
+/u-boot/LOG
+/u-boot/errlog
+/u-boot/reloc_off
+
+/u-boot/include/generated/
+/u-boot/asm-offsets.s
+
+# stgit generated dirs
+/u-boot/patches-*
+/u-boot/.stgit-edit.txt
+
+# quilt's files
+/u-boot/patches
+/u-boot/series
+
+# gdb files
+/u-boot/.gdb_history
+
+# cscope files
+/u-boot/cscope.*
+
+# tags files
+/u-boot/tags
+/u-boot/ctags
+/u-boot/etags
+
+# OneNAND IPL files
+/u-boot/onenand_ipl/onenand-ipl*
+/u-boot/onenand_ipl/board/*/onenand*
+/u-boot/onenand_ipl/board/*/*.S
+
+#Temp Image
+ubuntu.img
+ubuntu-base-18.04-base-arm64.tar.gz
+
+#Tools Log
+/u-boot/rkbin/tools/log
